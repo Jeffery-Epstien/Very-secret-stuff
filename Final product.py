@@ -1,5 +1,12 @@
 import random
 import string
+import os
+
+os.system('')
+
+hot_pink = '\033[95m'
+cyan = '\033[36m'
+reset = '\033[0m'
 
 class WordProvider:
     def __init__(self):
@@ -18,13 +25,8 @@ class WordProvider:
         return self.part3_data[-1]  
 
 def generate_random_noise():
-    
     noise = ''.join(random.choices(string.ascii_letters, k=random.randint(2, 5)))
-    
-    
-    spaces = ' ' * random.randint(20, 32)
-    
-    
+    spaces = ' ' * random.randint(50, 60)
     return spaces + noise
 
 def construct_final_message(provider):
@@ -36,12 +38,10 @@ def construct_final_message(provider):
 
 if __name__ == "__main__":
     for _ in range(random.randint(2, 6)):
-        print(generate_random_noise())
+        print(f"{hot_pink}{generate_random_noise()}{reset}")
         
     provider = WordProvider()
-
     final_message = construct_final_message(provider)
-    print(final_message)
+    print(f"{cyan}{final_message}{reset}")
 
-    # Exit code
     input("\nPress Enter to exit...")
