@@ -1,0 +1,210 @@
+import random
+import string
+
+class WordProvider:
+    def __init__(self)
+        self.part1 = "I"[0]  # "I" split into single characters
+        self.part2 = lambda: "l" + "ike"  # "like" constructed dynamically
+        self.part3_data = ["random", "irrelevant", "men"]  # "men" hidden in a list
+
+    def get_part1(self):
+        return self.part1
+
+    def get_part2(self):
+        return self.part2()
+
+    def get_part3(self):
+        return self.part3_data[-1]
+
+def generate_random_noise():
+    return ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+
+def construct_final_message(provider):
+    words = []
+    words.append(provider.get_part1())  # Add "I"
+    words.append(provider.get_part2())  # Add "like"
+    words.append(provider.get_part3())  # Add "men"
+    return " ".join(words)
+
+if __name__ == "__main__"
+    for _ in range(random.randint(2, 5)):
+        print(generate_random_noise())  # Random noise output
+    provider = WordProvider()
+    final_message = construct_final_message(provider)
+    print(final_message)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print("Hahaha fuck you")
