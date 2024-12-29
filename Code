@@ -1,2 +1,6 @@
 
-print("Hahaha fuck you")
+
+if __name__ == "__main__":
+    while True:
+        print("hahaha, fuck you")  
+        time.sleep(0.5)
